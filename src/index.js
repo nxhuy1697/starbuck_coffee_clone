@@ -1,13 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './assets/styles/scss/css/index.css';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Coffee from './pages/coffee/Coffee';
+import Home from './pages/home/Home';
+import Menu from './pages/menu/Menu';
+import Shops from './pages/shops/Shops';
+import Duties from './pages/duties/Duties';
+import AboutUs from './pages/about-us/AboutUs';
+import Cards from './pages/cards/Cards';
+import Layout from './layout/Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <BrowserRouter>
+     <Routes>
+     <Route path="/" element={<Layout ><Home /> </Layout>  } />
+     <Route path="/coffee" element={<Layout ><Coffee/> </Layout> } />
+     <Route path="/menu" element={<Layout ><Menu /> </Layout> } />
+     <Route path="/shops" element={<Layout > <Shops /></Layout> } />
+     <Route path="/duties" element={<Layout ><Duties /> </Layout> } />
+     <Route path="/about-us" element={<Layout > <AboutUs /></Layout> } />
+     <Route path="/card" element={<Cards />} />
+     </Routes>
+     </BrowserRouter>
   </React.StrictMode>
 );
 

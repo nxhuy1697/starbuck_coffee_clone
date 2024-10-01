@@ -1,0 +1,49 @@
+.banner{
+    background-image: url(../../../../assets/img/autumn-carosel.jpg);
+    background-position: center;
+    height: 560px;
+}
+.espresso{
+    padding: 70px 0;
+    &__content{
+        margin-top: 60px;
+        &-title{
+            font-size: 2.4rem;
+            font-weight: bolder;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+        &-body{
+            font-size: 17px;
+            font-style: italic;
+            font-weight: bolder;
+            margin-bottom: 18px;
+        }
+        &-more{
+            font-weight: bolder;
+            border-bottom: 1px dotted;
+        }
+    }
+}
+.opportunity{
+    padding: 70px 0;
+    &__content{
+        margin-top: 60px;
+        &-title{
+            font-size: 2.4rem;
+            font-weight: bolder;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+        &-body{
+            font-size: 17px;
+            font-style: italic;
+            font-weight: bolder;
+            margin-bottom: 18px;
+        }
+        &-more{
+            font-weight: bolder;
+            border-bottom: 1px dotted;
+        }
+    }
+}
