@@ -1,0 +1,17 @@
+.cardHeader{
+    &__logo{
+        &-img{
+            width: 138px;
+        }
+    }
+    &__navbar{
+        &-item{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}
+.wrapper{
+    padding-top: 20px;
+}

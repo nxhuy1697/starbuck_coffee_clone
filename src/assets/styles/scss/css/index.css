@@ -32,6 +32,18 @@ a:hover {
   color: black;
 }
 
+.breadcrumb {
+  background-color: #fff;
+  color: #53534a;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.wrapper {
+  margin: 0 40px;
+  padding: 32px 40px;
+}
+
 .header {
   padding: 15px 0;
   display: flex;
@@ -144,6 +156,19 @@ a:hover {
 .footer__bottom-credit p {
   font-size: 10px;
   color: #666666;
+}
+
+.cardHeader__logo-img {
+  width: 138px;
+}
+.cardHeader__navbar-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper {
+  padding-top: 20px;
 }
 
 .banner {
@@ -287,110 +312,160 @@ a:hover {
   font-size: 15px;
 }
 
-.menu .wrapper {
-  margin: 0 40px;
-  padding: 0 20px;
-}
-.menu .wrapper .articleBlock {
+.menu .articleBlock {
   padding-top: 32px;
 }
-.menu .wrapper .articleBlock__title {
+.menu .articleBlock__title {
   font-size: 30px;
   margin-bottom: 25px;
 }
-.menu .wrapper .articleBlock__body {
+.menu .articleBlock__body {
   font-size: 24px;
 }
-.menu .wrapper .articleBlock__img {
+.menu .articleBlock__img {
   margin-bottom: 25px;
 }
-.menu .wrapper .articleBlock__bottom {
+.menu .articleBlock__bottom {
   font-size: 14px;
   margin-bottom: 25px;
 }
-.menu .wrapper .articleMenu__item {
+.menu .articleMenu__item {
   padding: 0 20px;
 }
-.menu .wrapper .articleMenu__item-title {
+.menu .articleMenu__item-title {
   font-size: 26px;
   font-weight: bolder;
   color: #2a8a15;
 }
-.menu .wrapper .articleMenu__item-title:hover {
+.menu .articleMenu__item-title:hover {
   background-color: #2a8a15;
   color: white;
 }
-.menu .wrapper .articleMenu__item-body {
+.menu .articleMenu__item-body {
   margin-bottom: 25px;
   font-size: 14px;
 }
-.menu .wrapper .articleMenu__item-more {
+.menu .articleMenu__item-more {
   color: #2a8a15;
   font-size: 14px;
 }
-.menu .wrapper .articleMenu__item-more:hover {
+.menu .articleMenu__item-more:hover {
   background-color: #2a8a15;
   color: white;
-}
-.menu__footer {
-  margin-top: 77px;
-  padding: 0 20px;
-}
-.menu__footer p {
-  color: #53534a;
-  font-size: 14px;
 }
 
-.shops .wrapper {
-  margin: 0 40px;
-  padding: 0 20px;
-}
-.shops .wrapper .articleBlock {
-  padding-top: 32px;
-}
-.shops .wrapper .articleBlock__title {
+.shops__title {
   font-size: 30px;
+  font-weight: bold;
   margin-bottom: 25px;
 }
-.shops .wrapper .articleBlock__body {
+.shops__img {
+  margin-bottom: 25px;
+}
+.shops__article {
+  padding: 0 20px;
+}
+.shops__article-head a {
   font-size: 24px;
-}
-.shops .wrapper .articleBlock__img {
-  margin-bottom: 25px;
-}
-.shops .wrapper .articleBlock__bottom {
-  font-size: 14px;
-  margin-bottom: 25px;
-}
-.shops .wrapper .articleMenu__item {
-  padding: 0 20px;
-}
-.shops .wrapper .articleMenu__item-title {
-  font-size: 26px;
-  font-weight: bolder;
+  font-weight: bold;
   color: #2a8a15;
 }
-.shops .wrapper .articleMenu__item-title:hover {
+.shops__article-head a:hover {
   background-color: #2a8a15;
   color: white;
 }
-.shops .wrapper .articleMenu__item-body {
+.shops__article-body {
+  font-size: 14px;
   margin-bottom: 25px;
+}
+.shops__article-more {
+  margin-bottom: 25px;
+}
+.shops__article-more span {
   font-size: 14px;
 }
-.shops .wrapper .articleMenu__item-more {
+.shops__article-more a {
   color: #2a8a15;
   font-size: 14px;
 }
-.shops .wrapper .articleMenu__item-more:hover {
+.shops__article-more a:hover {
   background-color: #2a8a15;
   color: white;
 }
-.shops__footer {
-  margin-top: 77px;
-  padding: 0 20px;
+
+.duties__article h1 {
+  font-size: 30px;
+  margin-bottom: 24px;
 }
-.shops__footer p {
-  color: #53534a;
+.duties__article h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.duties__article-img {
+  margin-bottom: 25px;
+}
+.duties__article-body {
   font-size: 14px;
+  margin-bottom: 25px;
+}
+.duties__block-item .title a {
+  color: #2a8a15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.duties__block-item .title a:hover {
+  background-color: #2a8a15;
+  color: white;
+}
+.duties__block-item .paragraph {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.duties__block-item .list__item a {
+  color: #2a8a15;
+}
+.duties__block-item .list__item a:hover {
+  background-color: #2a8a15;
+  color: white;
+}
+
+.aboutUs__left h1 {
+  font-size: 30px;
+}
+.aboutUs__left h2 {
+  font-size: 25px;
+}
+.aboutUs__left-body p {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.aboutUs__left-body p a {
+  color: #2a8a15;
+  font-size: 14px;
+}
+.aboutUs__left-body p a:hover {
+  background-color: #2a8a15;
+  color: white;
+}
+.aboutUs__right-sidebar {
+  background-color: black;
+  padding: 16px 12px;
+}
+.aboutUs__right-sidebar h3 a {
+  color: #2a8a15;
+  font-size: 22px;
+}
+.aboutUs__right-sidebar h3 a:hover {
+  background-color: #2a8a15;
+  color: white;
+}
+.aboutUs__right-sidebar ul li {
+  margin-bottom: 10px;
+}
+.aboutUs__right-sidebar ul li a {
+  color: white;
+  font-size: 14px;
+}
+.aboutUs__right-sidebar ul li a:hover {
+  background-color: #2a8a15;
 }/*# sourceMappingURL=index.css.map */

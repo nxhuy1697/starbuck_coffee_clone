@@ -1,0 +1,51 @@
+.duties {
+  
+  &__article {
+    h1 {
+      font-size: 30px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    &-img {
+      margin-bottom: 25px;
+    }
+    &-body {
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+  }
+  &__block {
+    &-item {
+      .title {
+        a{
+
+            color: #2a8a15;
+            font-size: 24px;
+            font-weight: bold;
+            &:hover{
+                background-color:#2a8a15;
+                color: white;
+            }
+        }
+      }
+      .paragraph {
+        font-size: 14px;
+        margin-bottom: 25px;
+      }
+      .list {
+        &__item {
+          a {
+            color: #2a8a15;
+            &:hover{
+                background-color:#2a8a15;
+                color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

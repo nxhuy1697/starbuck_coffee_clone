@@ -11,6 +11,7 @@ import Duties from './pages/duties/Duties';
 import AboutUs from './pages/about-us/AboutUs';
 import Cards from './pages/cards/Cards';
 import Layout from './layout/Layout';
+import CardLayout from './layout/CardLayout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,7 +24,7 @@ root.render(
      <Route path="/shops" element={<Layout > <Shops /></Layout> } />
      <Route path="/duties" element={<Layout ><Duties /> </Layout> } />
      <Route path="/about-us" element={<Layout > <AboutUs /></Layout> } />
-     <Route path="/card" element={<Cards />} />
+     <Route path="/card" element={<CardLayout><Cards /></CardLayout> } />
      </Routes>
      </BrowserRouter>
   </React.StrictMode>

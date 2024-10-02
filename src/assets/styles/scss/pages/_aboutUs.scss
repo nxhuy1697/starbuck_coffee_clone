@@ -1,0 +1,54 @@
+.aboutUs {
+  &__left {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    &-img {
+    }
+    &-body {
+      p {
+        font-size: 14px;
+        margin-bottom: 25px;
+        a {
+          color: #2a8a15;
+          font-size: 14px;
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    &-sidebar {
+      background-color: black;
+      padding: 16px 12px;
+      h3 {
+        a {
+          color: #2a8a15;
+          font-size: 22px;
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+      }
+      ul {
+        li {
+            margin-bottom: 10px;
+          a {
+            color: white;
+            font-size: 14px;
+            &:hover {
+              background-color: #2a8a15;
+            }
+          }
+        }
+      }
+    }
+  }
+}

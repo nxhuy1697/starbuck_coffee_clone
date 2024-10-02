@@ -27,7 +27,7 @@ export default function Menu() {
           </div>
         </div>
       </article>
-      <div className='menu__footer'>
+      <div className='breadcrumb mt-5'>
         <p>Thực đơn</p>
       </div>
      </div>
