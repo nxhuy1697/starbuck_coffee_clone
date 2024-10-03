@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './assets/styles/scss/css/index.css';
+// import './assets/styles/scss/css/index.css';
+import './assets/styles/scss/index.scss'
+
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Coffee from './pages/coffee/Coffee';

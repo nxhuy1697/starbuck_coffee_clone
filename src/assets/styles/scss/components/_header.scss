@@ -1,46 +1,30 @@
 .header {
-  padding: 15px 0;
-  display: flex;
-  max-width: 1360px;
-  justify-content: space-between;
-
-  //
   &__left {
-    display: flex;
     &-logo {
     }
     &-nav {
-      margin-top: 28px;
-      margin-left: 26px;
-
       ul {
-        display: flex;
-        cursor: pointer;
-
         a {
-          color: black;
-          padding: 14px;
-          text-decoration: none;
           text-transform: uppercase;
-          letter-spacing: 2px;
+          letter-spacing: 1.5px;
         }
       }
     }
   }
-  &__right {
-    &-icon {
-      color: #006340;
-      margin-right: 11px;
+  // &__right {
+  //   &-icon {
+  //     color: #006340;
+  //     margin-right: 11px;
       
-    }
-    &-looking {
-      a {
-        color: #5b5959;
-        text-decoration: none;
-        &:hover {
-            color: #006340 ;
-          }
-      } 
-    }
-  }
+  //   }
+  //   &-looking {
+  //     a {
+  //       color: #5b5959;
+  //       text-decoration: none;
+  //       &:hover {
+  //           color: #006340 ;
+  //         }
+  //     } 
+  //   }
+  // }
 }

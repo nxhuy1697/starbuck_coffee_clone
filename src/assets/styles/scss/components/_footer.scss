@@ -2,9 +2,9 @@
   background-color: #f7f7f7;
 
   &__header {
-    width: 100%;
+
     background-color: #f0f0f0;
-    padding: 15px 0;
+
     ul {
       display: flex;
       margin-left: 35px;
@@ -16,10 +16,7 @@
       }
     }
   }
-  .wrapper {
-    padding: 0 40px;
-    margin: 0 20px;
-  }
+
   &__main {
     &-content {
       background-image: url(https://www.starbucks.vn/assets/images/wordmark_footer.png);
@@ -44,18 +41,16 @@
     &-content {
       .site__selection {
         display: flex;
-
         padding: 5px 0;
         &-list {
           border-right: 1px solid #b3b3b3;
-          display: inline-block;
           font-size: 1em;
           padding: 0 0.75em 0 0;
-          margin: 5px 0;
+          margin: 18px 0;
         }
         &-lang {
           padding: 0 10px;
-          margin: 7px 0;
+          margin: 15px 0;
           p{
             font-size: 14px;
           }
@@ -67,9 +62,12 @@
         display: flex;
         &-item{
           padding: 0 7px;
-          border-right: 1px solid #b3b3b3;
+         
           a{
+            border-right: 1px solid #b3b3b3;
+            margin: 15px 0;
             color: #666666;
+            padding-right: 15px;
             &:hover{
               color: #8c8c8c;
             }

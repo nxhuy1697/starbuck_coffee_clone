@@ -7,9 +7,9 @@ export default function Coffee() {
       <section className="banner__coffee"></section>
       {/* coffee  */}
       <section className="findCoffee">
-        <div className="container">
-          <div className="row">
-            <div className="findCoffee__content col-6">
+        <div className="container mx-auto pl-10 flex gap-16">
+
+            <div className="findCoffee__content flex-1">
               <p className="findCoffee__content-title">TÌM KIẾM CÀ PHÊ</p>
               <p className="findCoffee__content-body">
                 Những bậc thầy về cà phê của chúng tôi đã đúc kết nhiều năm kinh
@@ -25,19 +25,19 @@ export default function Coffee() {
                 <a href="#">Duyệt tất cả các loại cà phê »</a>
               </p>
             </div>
-            <div className="findCoffee__img col-6">
+            <div className="findCoffee__img flex-1">
               <img
                 src="https://www.starbucks.vn/media/lt4ns4t5/coffee-finder-circles_tcm89-3966_w1024_n.png"
                 alt=""
               />
             </div>
-          </div>
+
         </div>
       </section>
       {/* bottle  */}
-      <section className="coffeeBottle">
-        <div className="wrapper">
-          <div className="coffeeBottle__content col-6">
+      <section className="coffeeBottle pt-16">
+        <div className="container mx-auto pl-10">
+          <div className="coffeeBottle__content w-2/3">
             <h2>CÁCH PHA CÀ PHÊ</h2>
             <h1>Bình ép cà phê</h1>
             <p className="coffeeBottle__content-body">
@@ -48,7 +48,7 @@ export default function Coffee() {
           </div>
           
         </div>
-        <div className="coffeeBottle__feature col-12">
+        <div className="coffeeBottle__feature">
             <div className="coffeeBottle__feature-card">
               <div className="card__item">
                 <a href="#"><i class="fas fa-coffee"></i></a>

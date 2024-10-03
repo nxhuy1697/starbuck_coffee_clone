@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="footer ">
+    <div className="footer">
       <div className="footer__header">
         <ul>
           <li>
@@ -13,7 +13,7 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className="wrapper">
+      <div className="container mx-auto">
         {/* main  */}
         <div className="footer__main">
           <div className="footer__main-content">
@@ -56,15 +56,14 @@ export default function Footer() {
         </div>
         <div className="footer__bottom">
             <div className="footer__bottom-content">
-              <ul className="site__selection">
-                <li className="site__selection-list">
+              <ul className="site__selection ">
+                <li className="site__selection-list flex justify-center align-middle">
                   <a href="#">
                     <img
                       src="https://www.starbucks.vn/assets/images/VietNam_tcm89-24771_w1024_n.png"
                       alt=""
-                    />
+                     />
                   </a>{" "}
-                  »
                 </li>
                 <li className="site__selection-lang">
                   <p>Tiếng Việt (VN)</p>
