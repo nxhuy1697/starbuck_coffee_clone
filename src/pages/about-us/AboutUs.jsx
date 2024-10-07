@@ -4,9 +4,9 @@ import React from 'react'
 export default function AboutUs() {
   return (
     <div className='aboutUs'>
-      <div className="wrapper">
-        <div className="row">
-        <div className="aboutUs__left col-8">
+      <div className="container">
+        <div className="aboutUs__wrapper">
+        <div className="aboutUs__left ">
         <h1 className='mb-5'>Công ty Cà phê Starbucks</h1>
         <h2 className='mb-3' >Mỗi tuần Starbucks trên khắp thế giới phục vụ hàng triệu thức uống đến tay khách hàng. Và Starbucks cam kết rằng sẽ phục vụ từng khách hàng duy nhất tại một thời điểm.</h2>
           <div className="aboutUs__left-img mb-5">
@@ -20,7 +20,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <div className="aboutUs__right col-4">
+        <div className="aboutUs__right">
           <div className='aboutUs__right-sidebar'>
             <h3> <a href="#">VỀ CHÚNG TÔI</a> </h3>
             <ul>
@@ -31,7 +31,7 @@ export default function AboutUs() {
           </div>
         </div>
         </div>
-        <div className="breadcrumb mt-5 ">
+        <div className="breadcrumb mt-16 mb-5">
           Về chúng tôi
         </div>
        

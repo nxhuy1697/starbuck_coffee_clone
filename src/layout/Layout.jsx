@@ -4,7 +4,7 @@ import Footer from '../components/footer/Footer'
 
 export default function Layout({children}) {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <Header/>
         {children}
         <Footer />

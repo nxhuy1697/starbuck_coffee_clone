@@ -2,16 +2,16 @@ import React from "react";
 
 export default function CardHeader() {
   return (
-    <div className="wrapper">
-      <div className="cardHeader row">
-        <div className="cardHeader__logo col-3">
+    <div className="container mx-auto py-5 lg:mx-auto">
+      <div className="cardHeader flex">
+        <div className="cardHeader__logo flex-auto w-1/4">
           <img
             src="https://card.starbucks.vn/static/media/new-logo.2fec2102.png"
             alt=""
             className="cardHeader__logo-img"
           />
         </div>
-        <div className="cardHeader__navbar col-9">
+        <div className="cardHeader__navbar flex-auto w-3/4">
           <ul className="cardHeader__navbar-item">
             <li>
               <a href="#">Starbucks eGift</a>

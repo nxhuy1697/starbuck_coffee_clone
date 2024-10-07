@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Duties() {
   return (
-    <div className="duties">
-      <div className="wrapper">
-        <article className="duties__article col-8">
+        <div className="duties ">
+    <div className="container wrapper">
+        <article className="duties__article ">
           <h1>Trở thành một công ty có trách nhiệm</h1>
           <h2>
             Chúng tôi đã luôn tin rằng doanh nghiệp có thể và nên có tác động
@@ -26,9 +26,9 @@ export default function Duties() {
           </div>
         </article>
 
-        <div className="duties__block col-8">
-          <div className="row">
-          <div className="duties__block-item col-6">
+        <div className="duties__block">
+
+          <div className="duties__block-item">
             <div className="title"> <a href="#">Môi trường</a> </div>
             <div className="paragraph">
               Chúng tôi đang tìm cách giảm thiểu dấu ấn môi trường, giải quyết
@@ -59,7 +59,7 @@ export default function Duties() {
             </div>
             
           </div>
-          <div className="duties__block-item col-6">
+          <div className="duties__block-item pl-5">
             <div className="title"><a href="#">Tìm nguồn Cung ứng có Đạo đức</a> </div>
             <div className="paragraph">
             Chúng tôi cam kết mua và phục vụ loại cà phê được vun trồng có trách nhiệm, được buôn bán có đạo đức với chất lượng cao nhất nhằm tạo nên tương lai tốt đẹp hơn cho người trồng cà phê.
@@ -86,9 +86,9 @@ export default function Duties() {
             </div>
           </div>
 
-          </div>
+
         </div>
-        <div className="breadcrumb mt-5">
+        <div className="breadcrumb mt-24">
           <span>Trách nhiệm</span>
         </div>
       </div>

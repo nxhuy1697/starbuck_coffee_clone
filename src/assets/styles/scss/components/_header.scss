@@ -1,4 +1,7 @@
 .header {
+  background-color: #f7f7f7;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  border-top: 10px solid #006340;
   &__left {
     &-logo {
     }
@@ -15,7 +18,7 @@
   //   &-icon {
   //     color: #006340;
   //     margin-right: 11px;
-      
+
   //   }
   //   &-looking {
   //     a {
@@ -24,7 +27,150 @@
   //       &:hover {
   //           color: #006340 ;
   //         }
-  //     } 
+  //     }
   //   }
   // }
+}
+.headerSm {
+  display: none;
+}
+.dropdown {
+  display: none;
+}
+@media all and (max-width: 390px) {
+  .header {
+    display: none;
+  }
+  .headerSm {
+    display: block;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    border-top: 10px solid #006340;
+    &__right {
+      &-button {
+        .buttonClose {
+          background: black;
+          padding: 10px;
+          color: white;
+        }
+        .buttonOpen {
+          font-size: 22px;
+          padding: 10px;
+          color: #006340;
+        }
+      }
+    }
+  }
+  .dropdown {
+    display: block;
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 95px;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &__list {
+      @apply py-2;
+
+      li {
+        a {
+          display: block;
+          width: 100%;
+          color: white;
+          text-transform: uppercase;
+          padding: 10px 50px;
+          &:active {
+            background-color: #2a8a15;
+          }
+        }
+      }
+      &-item {
+      }
+    }
+  }
+
+  .show {
+    max-height: 300px;
+    opacity: 1;
+  }
+}
+@media all and (max-width: 768px) and (min-width: 391px) {
+  .header {
+    display: none;
+  }
+  .headerSm {
+    display: block;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    border-top: 10px solid #006340;
+    &__right {
+      &-button {
+        .buttonClose {
+          background: black;
+          padding: 10px;
+          color: white;
+        }
+        .buttonOpen {
+          font-size: 22px;
+          padding: 10px;
+          color: #006340;
+        }
+      }
+    }
+  }
+  .dropdown {
+    display: block;
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 95px;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out;
+    &__list {
+      @apply py-2;
+
+      li {
+        a {
+          display: block;
+          width: 100%;
+          color: white;
+          text-transform: uppercase;
+          padding: 10px 50px;
+          &:active {
+            background-color: #2a8a15;
+          }
+        }
+      }
+      &-item {
+      }
+    }
+  }
+
+  .show {
+    max-height: 300px;
+    opacity: 1;
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 769px) {
+  .header {
+    @apply px-4;
+    &__left {
+      @apply flex flex-col;
+
+      &-logo {
+      }
+      &-nav {
+        ul {
+          @apply gap-4 mt-0;
+          a {
+          }
+        }
+      }
+    }
+
+  }
 }

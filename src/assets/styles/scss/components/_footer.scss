@@ -1,10 +1,8 @@
 .footer {
   background-color: #f7f7f7;
-
+  border-bottom: 10px solid #382f2d;
   &__header {
-
     background-color: #f0f0f0;
-
     ul {
       display: flex;
       margin-left: 35px;
@@ -37,6 +35,9 @@
       }
     }
   }
+  &__sm{
+    display: none;
+  }
   &__bottom {
     &-content {
       .site__selection {
@@ -51,36 +52,294 @@
         &-lang {
           padding: 0 10px;
           margin: 15px 0;
-          p{
+          p {
             font-size: 14px;
           }
         }
       }
     }
-    &-sub{
-      .row__sub{
+    &-sub {
+      .row__sub {
         display: flex;
-        &-item{
+        &-item {
           padding: 0 7px;
-         
-          a{
+
+          a {
             border-right: 1px solid #b3b3b3;
             margin: 15px 0;
             color: #666666;
             padding-right: 15px;
-            &:hover{
+            &:hover {
               color: #8c8c8c;
             }
           }
-          
         }
       }
     }
-    &-credit{
+    &-credit {
       padding: 20px 0;
-      p{
+      p {
         font-size: 10px;
         color: #666666;
+      }
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  .footer {
+    &__header {
+      border-top: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      ul {
+        margin: 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid #b3b3b3;
+        padding-bottom: 25px 0;
+        overflow: hidden;
+      }
+    }
+    &__main {
+      display: none;
+      padding: 0 20px;
+      &-content {
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        .block {
+          padding: 10px 0;
+        }
+      }
+    }
+    &__sm {
+      display: block;
+      &-content {
+        .block {
+          border-bottom: 1px solid #b3b3b3;
+          &__title {
+            padding: 5px 20px;
+            @apply flex justify-between align-middle;
+            p {
+              font-size: 15px;
+              line-height: 35px;
+            }
+          }
+          ul{
+            li{
+              padding: 0 20px ;
+            }
+          }
+          .hide {
+            display: block;
+            background-color: #1e1e1e;
+            max-height: 0;
+            opacity: 0;
+
+            transition: all 0.3s ease-in-out;
+          }
+          .show {
+            transition: all 0.3s ease-in-out;
+            display: block;
+          }
+        }
+      }
+    }
+    &__bottom {
+      padding: 0 20px;
+      &-content {
+        .block {
+          &__title {
+            &-btn {
+            }
+          }
+        }
+      }
+      &-sub {
+        .row__sub {
+          display: flex;
+          flex-direction: column;
+          &-item {
+            a {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) and (min-width: 391px){
+  .footer {
+    &__header {
+      // border-top: 3px solid #fff;
+      // border-bottom: 3px solid #fff;
+      ul {
+        // margin: 0;
+        // margin-bottom: 0;
+        // border-bottom: 1px solid #b3b3b3;
+        // padding-bottom: 25px 0;
+        // overflow: hidden;
+      }
+    }
+    &__main {
+      display: none;
+      padding: 0 20px;
+      &-content {
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        .block {
+          padding: 10px 0;
+        }
+      }
+    }
+    &__sm {
+      display: block;
+      &-content {
+        .block {
+          border-bottom: 1px solid #b3b3b3;
+          &__title {
+            padding: 5px 20px;
+            @apply flex justify-between align-middle;
+            p {
+              font-size: 15px;
+              line-height: 35px;
+            }
+          }
+          ul{
+            li{
+              padding: 0 20px ;
+            }
+          }
+          .hide {
+            display: block;
+            background-color: #1e1e1e;
+            max-height: 0;
+            opacity: 0;
+
+            transition: all 0.3s ease-in-out;
+          }
+          .show {
+            transition: all 0.3s ease-in-out;
+            display: block;
+          }
+        }
+      }
+    }
+    &__bottom {
+      padding: 0 20px;
+      &-content {
+        .block {
+          &__title {
+            &-btn {
+            }
+          }
+        }
+      }
+      &-sub {
+        .row__sub {
+          display: flex;
+          flex-direction: column;
+          &-item {
+            a {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 769px){
+  .footer {
+    background-color: #f7f7f7;
+    border-bottom: 10px solid #382f2d;
+    &__header {
+      background-color: #f0f0f0;
+      ul {
+        display: flex;
+        margin-left: 35px;
+        li {
+          padding: 20px;
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  
+    &__main {
+      &-content {
+        // background-image: url(https://www.starbucks.vn/assets/images/wordmark_footer.png);
+        // background-repeat: no-repeat;
+        // background-position: 98.5% 0;
+        // background-size: 16px;
+        // min-height: 166px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 30px;
+
+        .block {
+          padding: 20px 0;
+          padding-right: 40px;
+  
+          &__title {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    &__sm{
+      display: none;
+    }
+    &__bottom {
+      padding: 0 20px;
+      &-content {
+        .site__selection {
+          display: flex;
+          padding: 5px 0;
+          &-list {
+            border-right: 1px solid #b3b3b3;
+            font-size: 1em;
+            padding: 0 0.75em 0 0;
+            margin: 18px 0;
+          }
+          &-lang {
+            padding: 0 10px;
+            margin: 15px 0;
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      &-sub {
+        .row__sub {
+          display: flex;
+          &-item {
+            padding: 0 7px;
+  
+            a {
+              border-right: 1px solid #b3b3b3;
+              margin: 15px 0;
+              color: #666666;
+              padding-right: 15px;
+              &:hover {
+                color: #8c8c8c;
+              }
+            }
+          }
+        }
+      }
+      &-credit {
+        padding: 20px 0;
+        p {
+          font-size: 10px;
+          color: #666666;
+        }
       }
     }
   }

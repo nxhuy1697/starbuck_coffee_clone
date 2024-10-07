@@ -1,5 +1,8 @@
 .duties {
-  
+  .wrapper{
+    @apply ml-16 w-2/3 pt-8;
+
+  }
   &__article {
     h1 {
       font-size: 30px;
@@ -18,7 +21,9 @@
     }
   }
   &__block {
+    @apply flex;
     &-item {
+
       .title {
         a{
 
@@ -36,12 +41,75 @@
         margin-bottom: 25px;
       }
       .list {
+        ul{
+          line-height: 20px;
+        }
         &__item {
           a {
             color: #2a8a15;
             &:hover{
                 background-color:#2a8a15;
                 color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 390px){
+  .duties {
+    .wrapper{
+      @apply m-0 w-full p-4;
+
+    }
+    &__article {
+      h1 {
+        // font-size: 30px;
+        // margin-bottom: 24px;
+      }
+      h2 {
+       
+      }
+      &-img {
+        // margin-bottom: 25px;
+      }
+      &-body {
+        // font-size: 14px;
+        // margin-bottom: 25px;
+      }
+    }
+    &__block {
+      @apply flex flex-col;
+      &-item {
+        @apply pl-0 ;
+        .title {
+          a{
+  
+              color: #2a8a15;
+              font-size: 24px;
+              font-weight: bold;
+              &:hover{
+                  background-color:#2a8a15;
+                  color: white;
+              }
+          }
+        }
+        .paragraph {
+          font-size: 14px;
+          margin-bottom: 25px;
+        }
+        .list {
+          ul{
+            line-height: 20px;
+          }
+          &__item {
+            a {
+              color: #2a8a15;
+              &:hover{
+                  background-color:#2a8a15;
+                  color: white;
+              }
             }
           }
         }

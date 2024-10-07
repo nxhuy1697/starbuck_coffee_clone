@@ -6,11 +6,11 @@
 .findCoffee {
   background-image: url(https://www.starbucks.vn/assets/images/Coffee-Finder-Background_tcm89-3968.png);
   background-position: center top;
-  padding: 70px 0;
+  @apply mx-10 px-5 py-16 flex gap-16;
   &__content {
-    margin-top: 60px;
+    @apply mt-16 flex-1;
     &-title {
-      font-size: 2.4rem;
+      font-size: 24px;
       font-weight: bolder;
       text-transform: uppercase;
       margin-bottom: 18px;
@@ -29,25 +29,28 @@
       }
     }
   }
+  &__img {
+    @apply flex-1;
+  }
 }
 .coffeeBottle {
- 
   background-image: url(https://www.starbucks.vn/assets/images/bg-how_to_brew-mobile.jpg);
-  min-height: 520px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 40% top;
   color: white;
-  position: relative;
+  padding: 20px;
+
   &__content {
+    @apply mx-10 px-5 py-5;
+    width: 650px;
     h2 {
       font-size: 18px;
       letter-spacing: 2px;
       font-weight: bolder;
-      margin: 15px 0;
     }
     h1 {
-      font-size: 42px;
+      font-size: 40px;
       font-weight: bolder;
       letter-spacing: 2px;
       margin: 15px 0;
@@ -58,29 +61,244 @@
     }
   }
   &__feature {
-    position: absolute;
     display: flex;
-    bottom: 0;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    margin-top: 100px;
     .card__item {
       display: flex;
-      flex-direction: column; 
-      align-items: center; 
-      justify-content: center; 
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       height: 100%;
       text-align: center;
       padding: 0 20px;
-        a{
-            color: white;
-            font-size: 50px;
-            margin-bottom: 10px;
+      a {
+        color: white;
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+      p {
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 390px) {
+  .findCoffee {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    // padding: 20px;
+    @apply mx-0 px-5 py-5 gap-0 ;
+    &__content {
+      @apply my-4;
+      text-align: center;
+      &-title {
+        word-spacing: 1px;
+        font-size: 24px;
+      }
+      &-body {
+        font-size: 14px;
+      }
+      &-more {
+      }
+    }
+  }
+  .coffeeBottle {
+    @apply mx-0 px-5 py-8;
+    background-image: none;
+    background-color: #1b1f23;
+    padding-left: 20px;
+    &__content {
+      @apply mx-0 p-0;
+      width: 100%;
+      h2 {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      &-body {
+        letter-spacing: 1.5px;
+        font-size: 14px;
+      }
+    }
+    &__feature {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 35px;
+      padding-bottom: 10px;
+      .card__item {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+        padding: 0;
+        a {
+          color: white;
+          font-size: 30px;
+          margin-bottom: 10px;
         }
-        p{
-            text-transform: uppercase;
-            font-size: 15px;
+        p {
+          text-transform: uppercase;
+          font-size: 15px;
         }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) and (min-width: 391px) {
+  .findCoffee {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    // padding: 20px;
+    @apply mx-0 px-5 py-5 gap-0 ;
+    &__content {
+      @apply my-4;
+      text-align: center;
+      &-title {
+        word-spacing: 1px;
+        font-size: 24px;
+      }
+      &-body {
+        font-size: 14px;
+      }
+      &-more {
+      }
+    }
+  }
+  .coffeeBottle {
+    @apply mx-0 px-5 py-8;
+    background-image: url(https://www.starbucks.vn/assets/images/bg-how_to_brew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% top;
+    color: white;
+    padding-left: 20px;
+    &__content {
+      @apply mx-0 p-0;
+      width: 100%;
+      h2 {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      &-body {
+        letter-spacing: 1.5px;
+        font-size: 14px;
+      }
+    }
+    &__feature {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 35px;
+      padding-bottom: 10px;
+      .card__item {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+        padding: 0;
+        a {
+          color: white;
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        p {
+          text-transform: uppercase;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 769px) {
+  .findCoffee {
+   @apply flex flex-row mx-0 px-5 py-5 gap-0 ;
+    
+  
+    &__content {
+      @apply my-4 flex-1;
+      // text-align: center;
+      &-title {
+        word-spacing: 1px;
+        font-size: 24px;
+      }
+      &-body {
+        font-size: 14px;
+      }
+      &-more {
+      }
+    }
+    &__img{
+      @apply flex-1 ;
+    }
+  }
+  .coffeeBottle {
+    @apply mx-0 px-5 py-8;
+    background-image: url(https://www.starbucks.vn/assets/images/bg-how_to_brew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% top;
+    color: white;
+    padding-left: 20px;
+    &__content {
+      @apply mx-0 p-0;
+      width: 100%;
+      h2 {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      &-body {
+        letter-spacing: 1.5px;
+        font-size: 14px;
+      }
+    }
+    &__feature {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 35px;
+      padding-bottom: 10px;
+      .card__item {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+        padding: 0;
+        a {
+          color: white;
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        p {
+          text-transform: uppercase;
+          font-size: 15px;
+        }
+      }
     }
   }
 }

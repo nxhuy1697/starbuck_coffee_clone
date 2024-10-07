@@ -1,8 +1,9 @@
 .menu {
+  width: 50%;
+  padding-top: 32px;
+  margin-left: 96px;
   .articleBlock {
-    padding-top: 32px;
     &__title {
-      font-size: 30px;
       margin-bottom: 25px;
     }
     &__body {
@@ -18,7 +19,6 @@
   }
   .articleMenu {
     &__item {
-      padding: 0 20px;
       &-title {
         font-size: 26px;
         font-weight: bolder;
@@ -44,3 +44,109 @@
   }
 }
 
+@media all and (max-width: 390px) {
+  .menu {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    .articleBlock {
+      &__title {
+        // margin-bottom: 25px;
+      }
+      &__body {
+        // font-size: 24px;
+      }
+      &__img {
+        // margin-bottom: 25px;
+      }
+      &__bottom {
+        // font-size: 14px;
+        // margin-bottom: 25px;
+      }
+    }
+    .articleMenu {
+      &__wrapper{
+        display: flex;
+        flex-direction: column;
+
+      }
+      &__item {
+        padding-left: 0;
+        &-title {
+          // font-size: 26px;
+          // font-weight: bolder;
+          color: #2a8a15;
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+        &-body {
+          margin-bottom: 10px;
+
+        }
+        &-more {
+          color: #2a8a15;
+          // font-size: 14px;
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) and (min-width: 391px){
+  .menu {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    .articleBlock {
+      &__title {
+        // margin-bottom: 25px;
+      }
+      &__body {
+        // font-size: 24px;
+      }
+      &__img {
+        // margin-bottom: 25px;
+      }
+      &__bottom {
+        // font-size: 14px;
+        // margin-bottom: 25px;
+      }
+    }
+    .articleMenu {
+      &__wrapper{
+        display: flex;
+        flex-direction: column;
+
+      }
+      &__item {
+        padding-left: 0;
+        &-title {
+          // font-size: 26px;
+          // font-weight: bolder;
+          color: #2a8a15;
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+        &-body {
+          margin-bottom: 10px;
+
+        }
+        &-more {
+          color: #2a8a15;
+          // font-size: 14px;
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

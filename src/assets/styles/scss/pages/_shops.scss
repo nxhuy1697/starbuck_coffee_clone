@@ -1,17 +1,19 @@
 .shops {
+  width: 50%;
+  margin-left: 96px;
+  padding-top: 32px;
   &__title {
     font-size: 30px;
-    font-weight: bold;
     margin-bottom: 25px;
   }
   &__img {
     margin-bottom: 25px;
   }
   &__article {
-    padding: 0 20px;
+
     &-head {
       a {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: bold;
         color: #2a8a15;
         &:hover {
@@ -37,6 +39,57 @@
         }
       }
       margin-bottom: 25px;
+    }
+  }
+}
+@media all and (max-width: 390px){
+  .shops {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    &__wrapper{
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    &__title {
+      // font-size: 30px;
+      // margin-bottom: 25px;
+    }
+    &__img {
+      // margin-bottom: 25px;
+    }
+    &__article {
+  
+      &-head {
+        a {
+          // font-size: 22px;
+          // font-weight: bold;
+          color: #2a8a15;
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+      }
+      &-body {
+        // font-size: 14px;
+        // margin-bottom: 25px;
+      }
+      &-more {
+          span{
+              // font-size: 14px;
+          }
+        a {
+          color: #2a8a15;
+          // font-size: 14px;
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+        // margin-bottom: 25px;
+      }
     }
   }
 }
