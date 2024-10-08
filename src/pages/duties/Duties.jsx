@@ -3,7 +3,7 @@ import React from "react";
 export default function Duties() {
   return (
         <div className="duties ">
-    <div className="container wrapper">
+    <div className="wrapper">
         <article className="duties__article ">
           <h1>Trở thành một công ty có trách nhiệm</h1>
           <h2>

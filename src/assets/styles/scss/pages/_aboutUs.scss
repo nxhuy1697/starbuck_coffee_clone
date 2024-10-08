@@ -1,5 +1,5 @@
 .aboutUs {
-  @apply pt-8 ml-16;
+  @apply pt-8 m-0 px-14;
   &__wrapper{
   @apply  flex gap-10; 
   }
@@ -59,6 +59,134 @@
   }
 }
 @media all and (max-width: 390px){
+  .aboutUs {
+    @apply size-full m-0 p-5;
+    &__wrapper{
+      @apply flex flex-col;
+    }
+    &__left {
+      @apply size-full;
+      h1 {
+        font-size: 29px;
+        line-height: 33px;
+      }
+      h2 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      &-img {
+      }
+      &-body {
+        p {
+          font-size: 14px;
+          margin-bottom: 25px;
+          a {
+            color: #2a8a15;
+            font-size: 14px;
+            &:hover {
+              background-color: #2a8a15;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    &__right {
+      @apply size-full;
+      &-sidebar {
+        background-color: black;
+        padding: 16px 12px;
+        h3 {
+          a {
+            color: #2a8a15;
+            font-size: 22px;
+            &:hover {
+              background-color: #2a8a15;
+              color: white;
+            }
+          }
+        }
+        ul {
+          li {
+            margin-bottom: 0;
+            a {
+              color: white;
+              font-size: 14px;
+              &:hover {
+                background-color: #2a8a15;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) and (min-width: 391px){
+  .aboutUs {
+    @apply size-full m-0 p-5;
+    &__wrapper{
+      @apply flex flex-col;
+    }
+    &__left {
+      @apply size-full;
+      h1 {
+        font-size: 29px;
+        line-height: 33px;
+      }
+      h2 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      &-img {
+      }
+      &-body {
+        p {
+          font-size: 14px;
+          margin-bottom: 25px;
+          a {
+            color: #2a8a15;
+            font-size: 14px;
+            &:hover {
+              background-color: #2a8a15;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    &__right {
+      @apply size-full;
+      &-sidebar {
+        background-color: black;
+        padding: 16px 12px;
+        h3 {
+          a {
+            color: #2a8a15;
+            font-size: 22px;
+            &:hover {
+              background-color: #2a8a15;
+              color: white;
+            }
+          }
+        }
+        ul {
+          li {
+            margin-bottom: 0;
+            a {
+              color: white;
+              font-size: 14px;
+              &:hover {
+                background-color: #2a8a15;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 769px){
   .aboutUs {
     @apply size-full m-0 p-5;
     &__wrapper{

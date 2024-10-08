@@ -5,3 +5,37 @@
 .sbgrey{
     color: #5b5959;
 }
+
+//
+
+.buttonWhite {
+    border: 1px solid #00874a;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    color: #00874a;
+    i{
+        line-height: 20px;
+    }
+    span{
+
+    }
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+}
+.buttonGreen {
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: #00874a;
+    color: white;
+    transition: all 0.3s ease-in-out;
+   
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+}

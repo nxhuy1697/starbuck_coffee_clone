@@ -9,8 +9,10 @@
   &__img {
     margin-bottom: 25px;
   }
+  &__wrapper {
+    @apply grid grid-cols-2 gap-8;
+  }
   &__article {
-
     &-head {
       a {
         font-size: 22px;
@@ -27,9 +29,9 @@
       margin-bottom: 25px;
     }
     &-more {
-        span{
-            font-size: 14px;
-        }
+      span {
+        font-size: 14px;
+      }
       a {
         color: #2a8a15;
         font-size: 14px;
@@ -42,29 +44,23 @@
     }
   }
 }
-@media all and (max-width: 390px){
+@media all and (max-width: 390px) {
   .shops {
     width: 100%;
     padding: 20px;
     margin: 0;
-    &__wrapper{
+    &__wrapper {
       display: flex;
       flex-direction: column;
       gap: 0;
     }
     &__title {
-      // font-size: 30px;
-      // margin-bottom: 25px;
     }
     &__img {
-      // margin-bottom: 25px;
     }
     &__article {
-  
       &-head {
         a {
-          // font-size: 22px;
-          // font-weight: bold;
           color: #2a8a15;
           &:hover {
             background-color: #2a8a15;
@@ -73,22 +69,107 @@
         }
       }
       &-body {
-        // font-size: 14px;
-        // margin-bottom: 25px;
       }
       &-more {
-          span{
-              // font-size: 14px;
-          }
+        span {
+        }
         a {
           color: #2a8a15;
-          // font-size: 14px;
+
           &:hover {
             background-color: #2a8a15;
             color: white;
           }
         }
-        // margin-bottom: 25px;
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) and (min-width: 391px) {
+  .shops {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    &__title {
+    }
+    &__img {
+    }
+    &__article {
+      &-head {
+        a {
+          color: #2a8a15;
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+      }
+      &-body {
+      }
+      &-more {
+        span {
+        }
+        a {
+          color: #2a8a15;
+
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 769px) {
+  .shops {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    &__title {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+    &__img {
+      margin-bottom: 25px;
+    }
+    &__wrapper {
+      @apply grid grid-cols-2 gap-8;
+    }
+    &__article {
+      &-head {
+        a {
+          font-size: 22px;
+          font-weight: bold;
+          color: #2a8a15;
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+      }
+      &-body {
+        font-size: 14px;
+        margin-bottom: 25px;
+      }
+      &-more {
+        span {
+          font-size: 14px;
+        }
+        a {
+          color: #2a8a15;
+          font-size: 14px;
+          &:hover {
+            background-color: #2a8a15;
+            color: white;
+          }
+        }
+        margin-bottom: 25px;
       }
     }
   }

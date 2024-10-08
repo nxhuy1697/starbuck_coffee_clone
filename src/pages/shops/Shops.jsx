@@ -3,11 +3,11 @@ import React from 'react'
 
 export default function Shops() {
   return (
-    <div className="container overflow-hidden ">
+
     <div className='shops'>
         <h1 className='shops__title'>Quán cà phê</h1>
         <img src="https://www.starbucks.vn/media/omvp5zyo/coffeehouse.jpg" alt="" className='shops__img' />
-        <div className="grid grid-cols-2 gap-8 shops__wrapper">
+        <div className="shops__wrapper">
         <div className="shops__article">
           <div className="shops__article-head"> <a href="#">Cộng đồng trực tuyến</a> </div>
           <div className="shops__article-body">Cộng đồng nghĩa là chúng ta cùng nhau sống tốt hơn’. Trong các cửa hàng của chúng tôi và trên khắp thế giới. Trò chuyện, kết nối và tham gia.</div>
@@ -34,6 +34,6 @@ export default function Shops() {
         </div>
 
       </div>
-    </div>
+
   )
 }

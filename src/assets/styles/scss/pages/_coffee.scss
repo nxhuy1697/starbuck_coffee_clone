@@ -180,12 +180,9 @@
   }
   .coffeeBottle {
     @apply mx-0 px-5 py-8;
-    background-image: url(https://www.starbucks.vn/assets/images/bg-how_to_brew-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 40% top;
-    color: white;
-    padding-left: 20px;
+   
+    background-image: none;
+    background-color: #1b1f23;
     &__content {
       @apply mx-0 p-0;
       width: 100%;
@@ -261,7 +258,7 @@
     padding-left: 20px;
     &__content {
       @apply mx-0 p-0;
-      width: 100%;
+      width: 1/2;
       h2 {
         font-size: 14px;
       }
@@ -275,20 +272,17 @@
     }
     &__feature {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      margin-top: 35px;
-      padding-bottom: 10px;
+      align-items: center;
+      margin-top: 70px;
       .card__item {
         display: flex;
-        flex-direction: row;
-        gap: 20px;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100%;
         text-align: center;
-        padding: 0;
+        padding: 0 20px;
         a {
           color: white;
           font-size: 30px;
@@ -296,7 +290,7 @@
         }
         p {
           text-transform: uppercase;
-          font-size: 15px;
+          font-size: 9px;
         }
       }
     }

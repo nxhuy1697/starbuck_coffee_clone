@@ -1,17 +1,33 @@
-.cardHeader{
-    &__logo{
-        &-img{
-            width: 138px;
-        }
+.cardHeader {
+  @apply flex justify-start px-10 py-5;
+  &__logo {
+    @apply w-1/3;
+    &-img {
+      width: 138px;
     }
-    &__navbar{
-        &-item{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+  }
+  &__navbar {
+    
+    @apply flex justify-around w-2/3;
+    &-item {
+      @apply flex gap-10;
+      .list {
+        &__text {
+            font-size: 17px;
+            color: #00874a;
+            transition: all 0.1s ease-in-out;
+            &:hover{
+              border-bottom: 2px solid #00874a;
+            }
         }
+      }
     }
+    &-buttons {
+      @apply flex;
+       
+    }
+  }
 }
-.wrapper{
-    padding-top: 20px;
+.wrapper {
+  padding-top: 20px;
 }
