@@ -2,23 +2,103 @@
   &__banner {
   }
   &__main {
+    @apply flex;
     &-login {
+      border-right: 1px solid #e5e5e5;
+      @apply flex-1 p-20;
       .title {
         font-size: 32px;
+        margin-bottom: 40px;
+        font-weight: bold;
       }
       .loginForm {
-          width: 1000px;
-          height: 100px;
-          background-color: #333;
         &__email {
           &-filed {
-            border: red;
+            background-color: rgb(247, 247, 247);
+            width: 100%;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            padding: 15px;
+            border-bottom: 1px solid #e5e5e5;
+            outline: none;
           }
         }
         &__pass {
+          &-filed {
+            background-color: rgb(247, 247, 247);
+            width: 100%;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            padding: 15px;
+            outline: none;
+          }
+        }
+        &__keepLogin {
+          @apply flex justify-between mt-4;
+          &-tick {
+            @apply flex justify-start;
+            input {
+            }
+            label {
+              @apply select-none;
+            }
+          }
+          &-forgot {
+            p{
+
+            }
+            a {
+              color: #02a860;
+              border-bottom: 2px solid #02a860;
+            }
+          }
         }
       }
-    
+    }
+    &-register {
+      @apply flex-1 p-20;
+      .title{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+      .sub{
+        font-size: 15px;
+        color: #0000008F;
+
+      }
+      .reg__bottom{
+        &-sub{
+          font-size: 15px;
+        color: #0000008F;
+        }
+        &-card{
+          @apply flex ;
+          .cardItem{
+            @apply flex-1;
+            background-color: #d4e9e2;
+            padding-top: 24px;
+            border-radius: 16px;
+            padding-bottom: 42px;
+            // margin-right: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+              width: 102px;
+              padding: 10px 0;
+            }
+            p{
+              text-align: center;
+              font-size: 15px;
+              color: #0000008F;
+              margin-top: 24px;
+            }
+
+          }
+        }
+      }
     }
   }
 }

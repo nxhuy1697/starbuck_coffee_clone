@@ -35,7 +35,7 @@ export default function CardHeader() {
         </ul>
         <div className="cardHeader__navbar-buttons flex gap-3">
           <button className="flex gap-3 buttonWhite">
-          <i class="fa-regular fa-user"></i>
+          <i className="fa-regular fa-user"></i>
           <span className="">Sign in</span>
           </button>
           <button className="buttonGreen">
