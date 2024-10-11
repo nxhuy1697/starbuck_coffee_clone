@@ -102,3 +102,304 @@
     }
   }
 }
+
+@media all and (max-width: 390px){
+  .cards {
+    &__banner {
+    }
+    &__main {
+      @apply flex flex-col;
+      &-login {
+        border-bottom: 1px solid #e5e5e5;
+        @apply p-3;
+        .title {
+          font-size: 32px;
+          margin-bottom: 40px;
+          font-weight: bold;
+        }
+        .loginForm {
+          &__email {
+            &-filed {
+              background-color: rgb(247, 247, 247);
+              width: 100%;
+              border-top-left-radius: 16px;
+              border-top-right-radius: 16px;
+              padding: 15px;
+              border-bottom: 1px solid #e5e5e5;
+              outline: none;
+            }
+          }
+          &__pass {
+            &-filed {
+              background-color: rgb(247, 247, 247);
+              width: 100%;
+              border-bottom-left-radius: 16px;
+              border-bottom-right-radius: 16px;
+              padding: 15px;
+              outline: none;
+            }
+          }
+          &__keepLogin {
+            @apply flex flex-col mt-4;
+            &-tick {
+              @apply flex justify-start;
+              input {
+              }
+              label {
+                @apply select-none;
+              }
+            }
+            &-forgot {
+              p{
+  
+              }
+              a {
+                color: #02a860;
+                border-bottom: 2px solid #02a860;
+              }
+            }
+          }
+        }
+      }
+      &-register {
+        @apply p-3;
+        .title{
+          font-size: 32px;
+          font-weight: bold;
+          margin-bottom: 40px;
+        }
+        .sub{
+          font-size: 15px;
+          color: #0000008F;
+  
+        }
+        .reg__bottom{
+          &-sub{
+            font-size: 15px;
+          color: #0000008F;
+          }
+          &-card{
+            @apply flex flex-col;
+            .cardItem{
+              @apply flex-1 mx-0 my-2;
+              
+              img{
+                width: 102px;
+                padding: 10px 0;
+              }
+              p{
+                text-align: center;
+                font-size: 15px;
+                color: #0000008F;
+                margin-top: 24px;
+              }
+  
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) and (min-width: 391px){
+  .cards {
+    &__banner {
+    }
+    &__main {
+      @apply flex flex-col;
+      &-login {
+        border-bottom: 1px solid #e5e5e5;
+        @apply p-3;
+        .title {
+          font-size: 32px;
+          margin-bottom: 40px;
+          font-weight: bold;
+        }
+        .loginForm {
+          &__email {
+            &-filed {
+              background-color: rgb(247, 247, 247);
+              width: 100%;
+              border-top-left-radius: 16px;
+              border-top-right-radius: 16px;
+              padding: 15px;
+              border-bottom: 1px solid #e5e5e5;
+              outline: none;
+            }
+          }
+          &__pass {
+            &-filed {
+              background-color: rgb(247, 247, 247);
+              width: 100%;
+              border-bottom-left-radius: 16px;
+              border-bottom-right-radius: 16px;
+              padding: 15px;
+              outline: none;
+            }
+          }
+          &__keepLogin {
+            @apply flex flex-col mt-4;
+            &-tick {
+              @apply flex justify-start;
+              input {
+              }
+              label {
+                @apply select-none;
+              }
+            }
+            &-forgot {
+              p{
+  
+              }
+              a {
+                color: #02a860;
+                border-bottom: 2px solid #02a860;
+              }
+            }
+          }
+        }
+      }
+      &-register {
+        @apply p-3;
+        .title{
+          font-size: 32px;
+          font-weight: bold;
+          margin-bottom: 40px;
+        }
+        .sub{
+          font-size: 15px;
+          color: #0000008F;
+  
+        }
+        .reg__bottom{
+          &-sub{
+            font-size: 15px;
+          color: #0000008F;
+          }
+          &-card{
+            @apply flex flex-col;
+            .cardItem{
+              @apply flex-1 mx-0 my-2;
+              
+              img{
+                width: 102px;
+                padding: 10px 0;
+              }
+              p{
+                text-align: center;
+                font-size: 15px;
+                color: #0000008F;
+                margin-top: 24px;
+                padding: 0 30px;
+              }
+  
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 769px){
+  .cards {
+    &__banner {
+    }
+    &__main {
+      @apply flex;
+      &-login {
+        border-right: 1px solid #e5e5e5;
+        @apply flex-1 p-20;
+        .title {
+          font-size: 32px;
+          margin-bottom: 40px;
+          font-weight: bold;
+        }
+        .loginForm {
+          &__email {
+            &-filed {
+              background-color: rgb(247, 247, 247);
+              width: 100%;
+              border-top-left-radius: 16px;
+              border-top-right-radius: 16px;
+              padding: 15px;
+              border-bottom: 1px solid #e5e5e5;
+              outline: none;
+            }
+          }
+          &__pass {
+            &-filed {
+              background-color: rgb(247, 247, 247);
+              width: 100%;
+              border-bottom-left-radius: 16px;
+              border-bottom-right-radius: 16px;
+              padding: 15px;
+              outline: none;
+            }
+          }
+          &__keepLogin {
+            @apply flex flex-col mt-4;
+            &-tick {
+              @apply flex justify-start;
+              input {
+              }
+              label {
+                @apply select-none;
+              }
+            }
+            &-forgot {
+              p{
+  
+              }
+              a {
+                color: #02a860;
+                border-bottom: 2px solid #02a860;
+              }
+            }
+          }
+        }
+      }
+      &-register {
+        @apply flex-1 p-20;
+        .title{
+          font-size: 32px;
+          font-weight: bold;
+          margin-bottom: 40px;
+        }
+        .sub{
+          font-size: 15px;
+          color: #0000008F;
+  
+        }
+        .reg__bottom{
+          &-sub{
+            font-size: 15px;
+          color: #0000008F;
+          }
+          &-card{
+            @apply flex flex-col;
+            .cardItem{
+              @apply flex-1 mx-0 my-1;
+            
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              img{
+                width: 102px;
+                padding: 10px 0;
+              }
+              p{
+                text-align: center;
+                font-size: 15px;
+                color: #0000008F;
+                margin-top: 24px;
+                padding: 0 30px;
+              }
+  
+            }
+          }
+        }
+      }
+    }
+  } 
+}

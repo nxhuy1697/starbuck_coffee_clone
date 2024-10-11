@@ -1,0 +1,301 @@
+.cardFooter {
+  @apply p-5;
+  background-color: #f0f0f0;
+  &__blocks {
+    @apply flex;
+    &-item {
+      @apply w-1/4;
+      .title {
+        font-size: 14px;
+        color: #564d4d;
+        a {
+          &:hover {
+            border-bottom: 1px solid #564d4d;
+          }
+        }
+      }
+      .list {
+        &__pages {
+          height: 20px;
+          a {
+            font-size: 11px;
+            &:hover {
+              border-bottom: 1px solid #564d4d;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    margin-top: 40px;
+    &-content {
+      ul {
+        display: flex;
+        li {
+          font-size: 12px;
+          a {
+            margin-top: 2px;
+            padding-right: 2px;
+          }
+          p {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    &-sub {
+      ul {
+        display: flex;
+        li {
+          a {
+            font-size: 12px;
+
+          }
+        }
+      }
+    }
+    &-credit {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      p {
+        font-size: 12px;
+      }
+      .footerLogo {
+        img {
+          width: 9.375rem;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 390px){
+  .cardFooter {
+    @apply p-5;
+
+    &__blocks {
+      @apply flex flex-col;
+      &-item {
+        @apply flex-1 w-full py-3;
+        .title {
+          font-size: 11px;
+          color: #564d4d;
+          a {
+           
+          }
+        }
+        .list {
+          &__pages {
+            height: 20px;
+            a {
+              font-size: 9px;
+             
+            }
+          }
+        }
+      }
+    }
+    &__bottom {
+      margin-top: 30px;
+      &-content {
+        ul {
+          display: flex;
+          li {
+            font-size: 10px;
+            a {
+              margin-top: 2px;
+              padding-right: 2px;
+            }
+            p {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      &-sub {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            line-height: 17px;
+
+            a {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      &-credit {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+        p {
+          font-size: 10px;
+          margin-bottom: 10px;
+        }
+        .footerLogo {
+          img {
+            width: 9.375rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) and (min-width: 391px){
+  .cardFooter {
+    @apply p-5;
+
+    &__blocks {
+      @apply flex flex-col;
+      &-item {
+        @apply flex-1 w-full py-3;
+        .title {
+          font-size: 11px;
+          color: #564d4d;
+          a {
+            &:hover {
+              border-bottom: 1px solid #564d4d;
+            }
+          }
+        }
+        .list {
+          &__pages {
+            height: 20px;
+            a {
+              font-size: 9px;
+              &:hover {
+                border-bottom: 1px solid #564d4d;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__bottom {
+      margin-top: 30px;
+      &-content {
+        ul {
+          display: flex;
+          li {
+            font-size: 10px;
+            a {
+              margin-top: 2px;
+              padding-right: 2px;
+            }
+            p {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      &-sub {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            line-height: 17px;
+
+            a {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      &-credit {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+        p {
+          font-size: 10px;
+          margin-bottom: 10px;
+        }
+        .footerLogo {
+          img {
+            width: 9.375rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 769px){
+  .cardFooter {
+    @apply p-5;
+
+    &__blocks {
+      @apply flex flex-wrap;
+      &-item {
+        @apply w-1/2 py-3;
+        .title {
+          font-size: 11px;
+          color: #564d4d;
+          a {
+            &:hover {
+              border-bottom: 1px solid #564d4d;
+            }
+          }
+        }
+        .list {
+          &__pages {
+            height: 20px;
+            a {
+              font-size: 9px;
+              &:hover {
+                border-bottom: 1px solid #564d4d;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__bottom {
+      margin-top: 30px;
+      &-content {
+        ul {
+          display: flex;
+          li {
+            font-size: 10px;
+            a {
+              margin-top: 2px;
+              padding-right: 2px;
+            }
+            p {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      &-sub {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            line-height: 17px;
+
+            a {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      &-credit {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        p {
+          font-size: 10px;
+          margin-bottom: 10px;
+        }
+        .footerLogo {
+          img {
+            width: 9.375rem;
+          }
+        }
+      }
+    }
+  }
+}

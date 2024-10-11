@@ -7,27 +7,155 @@
     }
   }
   &__navbar {
-    
     @apply flex justify-around w-2/3;
     &-item {
       @apply flex gap-10;
       .list {
         &__text {
-            font-size: 17px;
-            color: #00874a;
-            transition: all 0.1s ease-in-out;
-            &:hover{
-              border-bottom: 2px solid #00874a;
-            }
+          font-size: 17px;
+          color: #00874a;
+          transition: all 0.1s ease-in-out;
+          &:hover {
+            border-bottom: 2px solid #00874a;
+          }
         }
       }
     }
     &-buttons {
       @apply flex;
-       
     }
   }
 }
 .wrapper {
   padding-top: 20px;
+}
+.smHeader{
+  display: none;
+}
+
+@media all and (max-width: 390px) {
+  .cardHeader {
+    display: none;
+  }
+  .smHeader{
+    display: block;
+    padding: 2px;
+    &__top{
+      @apply flex justify-between;
+      &-logo{
+
+      }
+      &-buttons{
+        @apply flex;
+        .buttonWhite{
+          padding: 6px 14px;
+          margin-right: 10px;
+        }
+        .buttonGreen{
+          padding: 6px 11px ;
+        }
+      }
+    }
+    &__navbar{
+      @apply ml-2;
+      &-item {
+        @apply flex gap-16;
+        overflow-x: auto;
+        .list {
+          display: flex; 
+          padding: 10px;
+        
+          &__text {
+            font-size: 12px;
+            color: #00874a;
+            flex-shrink: 0; 
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) and (min-width: 391px){
+  .cardHeader {
+    display: none;
+  }
+  .smHeader{
+    display: block;
+    padding: 2px;
+    &__top{
+      @apply flex justify-center;
+      &-logo{
+
+      }
+      &-buttons{
+        @apply flex;
+        .buttonWhite{
+          padding: 6px 14px;
+          margin-right: 10px;
+        }
+        .buttonGreen{
+          padding: 6px 11px ;
+        }
+      }
+    }
+    &__navbar{
+      @apply ml-2;
+      &-item {
+        @apply flex gap-8;
+        overflow-x: auto;
+        .list {
+          display: flex;
+          padding: 10px;
+          &__text {
+            font-size: 12px;
+            color: #00874a;
+            flex-shrink: 0; 
+            min-width: 100px; 
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 769px){
+  .cardHeader {
+    display: none;
+  }
+  .smHeader{
+    display: block;
+    padding: 2px;
+    &__top{
+      @apply flex justify-center mt-3;
+      &-logo{
+
+      }
+      &-buttons{
+        @apply flex;
+        .buttonWhite{
+          padding: 6px 14px;
+          margin-right: 10px;
+        }
+        .buttonGreen{
+          padding: 6px 11px ;
+        }
+      }
+    }
+    &__navbar{
+      @apply ml-2;
+      &-item {
+        @apply flex justify-center gap-8;
+        overflow-x: auto;
+        .list {
+          display: flex;
+          padding: 10px;
+          &__text {
+            font-size: 12px;
+            color: #00874a;
+            flex-shrink: 0; 
+            min-width: 100px; 
+          }
+        }
+      }
+    }
+  }
 }

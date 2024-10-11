@@ -1,6 +1,9 @@
 import React from "react";
+import {useForm} from "react-hook-form";
 
 export default function Cards() {
+  const form = useForm();
+  const {register} = form;
   return (
     <div className="cards">
       <div className="cards__banner">
@@ -22,6 +25,8 @@ export default function Cards() {
                 type="email"
                 placeholder="Email"
                 id="email"
+                name="email"
+                {...register("email")}
               />
             </div>
             {/* password  */}
@@ -30,6 +35,9 @@ export default function Cards() {
                 type="password"
                 className="loginForm__pass-filed text-sm placeholder:text-sm placeholder-gray-500"
                 placeholder="Password"
+                id="password"
+                name="password"
+                {...register("password")}
               />
             </div>
             {/* function  */}
@@ -73,6 +81,9 @@ export default function Cards() {
               </div>
             </div>
           </div>
+          <p className="sub mt-4">Collect 100 Stars within one year to reach Gold Status.</p>
+            {/* button  */}
+            <button className="buttonGreen mt-10">Join now</button>
         </div>
       </div>
         
