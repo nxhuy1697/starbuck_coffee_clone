@@ -1,9 +1,9 @@
 import React from "react";
-import {useForm} from "react-hook-form";
+// import {useForm} from "react-hook-form";
 
 export default function Cards() {
-  const form = useForm();
-  const {register} = form;
+  // const form = useForm();
+  // const {register} = form;
   return (
     <div className="cards">
       <div className="cards__banner">
@@ -26,7 +26,7 @@ export default function Cards() {
                 placeholder="Email"
                 id="email"
                 name="email"
-                {...register("email")}
+                // {...register("email")}
               />
             </div>
             {/* password  */}
@@ -37,7 +37,7 @@ export default function Cards() {
                 placeholder="Password"
                 id="password"
                 name="password"
-                {...register("password")}
+                // {...register("password")}
               />
             </div>
             {/* function  */}
